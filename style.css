@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: hsl(180, 52%, 96%);
+  color: hsl(180, 14%, 20%);
+}
+
+.header-bg {
+  width: 100%;
+  height: 150px;
+  background: hsl(180, 29%, 50%);
+  object-fit: cover;
+}
+
+.container {
+  max-width: 1000px;
+  margin: -75px auto 0;
+  padding: 0 20px;
+}
+
+.filter-bar {
+  background: #fff;
+  /* background: red; */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  background: hsl(180, 31%, 95%);
+  color: hsl(180, 29%, 50%);
+  /* color: red; */
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tag:hover {
+  background: hsl(180, 29%, 50%);
+  color: #fff;
+}
+
+.clear-btn {
+  background: none;
+  /* background: yellow; */
+  border: none;
+  color: hsl(180, 29%, 50%);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.job-listings {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.job-card {
+  background: #fff;
+  border-left: 5px solid transparent;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.job-card.featured {
+  border-left-color: hsl(180, 29%, 50%);
+}
+
+.job-info {
+  flex: 1;
+}
+
+.job-company {
+  font-weight: bold;
+  color: hsl(180, 29%, 50%);
+}
+
+.badges {
+  margin-left: 10px;
+  font-size: 0.7em;
+  padding: 3px 6px;
+  border-radius: 12px;
+  color: white;
+  background: hsl(180, 29%, 50%);
+}
+
+.position {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.meta {
+  font-size: 0.9em;
+  color: hsl(180, 8%, 52%);
+}
+
+.skill-tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-left: auto;
+}
+
+
+/* attribution */
+.attribution {
+  text-align: center;
+    font-size: 11px;
+}
+
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+/*  */
+
+/* ==============================
+   📱 Mobile Responsiveness
+   ============================== */
+@media (max-width: 768px) {
+body {
+  padding: 2rem 0rem;
+}
+
+  .header {
+    background: url('./images/bg-header-mobile.svg') no-repeat center;
+    background-size: cover;
+    height: 100px;
+  }
+
+  .main {
+    margin: -30px auto 0;
+    padding: 0 10px;
+  }
+
+  .filter-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .clear {
+    align-self: flex-end;
+  }
+
+  .job {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .job img {
+    margin: 0 0 10px;
+  }
+
+  .tags {
+    margin: 0;
+  }
+}
+
+.tag:active {
+  transform: scale(0.95);
+}
